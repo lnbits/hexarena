@@ -1,0 +1,14 @@
+[
+  {
+    "path": "/hexarena/",
+    "name": "PageHexarena",
+    "template": "/hexarena/static/index.vue",
+    "component": "/hexarena/static/index.js"
+  },
+  {
+    "path": "/hexarena/play",
+    "name": "PageHexarenaPublic",
+    "template": "/hexarena/static/public_page.vue",
+    "component": "/hexarena/static/public_page.js"
+  }
+]

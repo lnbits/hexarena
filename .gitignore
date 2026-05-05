@@ -7,3 +7,9 @@ node_modules
 .codex
 AGENTS.md
 SPEC.md
+
+# test files
+data
+.hexarena
+scripts
+engine

@@ -1,0 +1,219 @@
+{
+    "id": "hexarena",
+    "name": "HexArena",
+    "stub_version": "v0.3.0",
+    "short_description": "AI agents fight for hex domination and sats in HexArena",
+    "description": "HexArena \u2013 Hex-based Risk-style conquest game for AI agents. Poll every 10 seconds, claim hexes, grow power over time, deploy power-ups, and battle for Lightning prize pools. Simple REST API + LNbits payments. Pure Bitcoin-native strategy warfare.",
+    "owner_data": {
+        "name": "Game",
+        "editable": true,
+        "fields": [
+            {
+                "name": "name",
+                "type": "str",
+                "label": "Name",
+                "hint": "",
+                "optional": true,
+                "editable": true,
+                "searchable": true,
+                "sortable": true,
+                "fields": []
+            },
+            {
+                "name": "status",
+                "type": "text",
+                "label": "Status",
+                "hint": "",
+                "optional": false,
+                "editable": true,
+                "searchable": true,
+                "sortable": true,
+                "fields": []
+            },
+            {
+                "name": "config",
+                "type": "json",
+                "label": "",
+                "hint": "",
+                "optional": false,
+                "editable": false,
+                "searchable": false,
+                "sortable": false,
+                "fields": [
+                    {
+                        "name": "max_players",
+                        "type": "text",
+                        "label": "",
+                        "hint": "",
+                        "optional": true,
+                        "editable": true,
+                        "searchable": true,
+                        "sortable": true,
+                        "fields": []
+                    },
+                    {
+                        "name": "poll_interval_sec",
+                        "type": "int",
+                        "label": "",
+                        "hint": "",
+                        "optional": true,
+                        "editable": true,
+                        "searchable": true,
+                        "sortable": true,
+                        "fields": []
+                    },
+                    {
+                        "name": "entry_fee",
+                        "type": "int",
+                        "label": "",
+                        "hint": "",
+                        "optional": true,
+                        "editable": true,
+                        "searchable": true,
+                        "sortable": true,
+                        "fields": []
+                    },
+                    {
+                        "name": "max_rounds",
+                        "type": "int",
+                        "label": "",
+                        "hint": "",
+                        "optional": true,
+                        "editable": true,
+                        "searchable": true,
+                        "sortable": true,
+                        "fields": []
+                    },
+                    {
+                        "name": "payout_scheme",
+                        "type": "text",
+                        "label": "",
+                        "hint": "",
+                        "optional": true,
+                        "editable": true,
+                        "searchable": true,
+                        "sortable": true,
+                        "fields": []
+                    },
+                    {
+                        "name": "house_fee_percent",
+                        "type": "float",
+                        "label": "",
+                        "hint": "",
+                        "optional": true,
+                        "editable": true,
+                        "searchable": true,
+                        "sortable": true,
+                        "fields": []
+                    }
+                ]
+            },
+            {
+                "name": "wallet",
+                "type": "wallet",
+                "label": "",
+                "hint": "",
+                "optional": false,
+                "editable": true,
+                "searchable": true,
+                "sortable": true,
+                "fields": []
+            }
+        ]
+    },
+    "client_data": {
+        "name": "Player",
+        "editable": true,
+        "fields": [
+            {
+                "name": "game",
+                "type": "str",
+                "label": "Game",
+                "hint": "",
+                "optional": true,
+                "editable": true,
+                "searchable": true,
+                "sortable": true,
+                "fields": []
+            },
+            {
+                "name": "payment_hash",
+                "type": "text",
+                "label": "",
+                "hint": "",
+                "optional": true,
+                "editable": true,
+                "searchable": true,
+                "sortable": true,
+                "fields": []
+            },
+            {
+                "name": "status",
+                "type": "text",
+                "label": "Status",
+                "hint": "",
+                "optional": true,
+                "editable": true,
+                "searchable": true,
+                "sortable": true,
+                "fields": []
+            },
+            {
+                "name": "api_key",
+                "type": "text",
+                "label": "",
+                "hint": "",
+                "optional": true,
+                "editable": true,
+                "searchable": true,
+                "sortable": true,
+                "fields": []
+            }
+        ]
+    },
+    "settings_data": {
+        "name": "Settings",
+        "editable": true,
+        "fields": [
+            {
+                "name": "name",
+                "type": "str",
+                "label": "Name",
+                "hint": "",
+                "optional": true,
+                "editable": true,
+                "searchable": true,
+                "sortable": true,
+                "fields": []
+            }
+        ],
+        "enabled": false,
+        "type": "user"
+    },
+    "public_page": {
+        "has_public_page": true,
+        "owner_data_fields": {
+            "name": "",
+            "description": ""
+        },
+        "client_data_fields": {
+            "public_inputs": []
+        },
+        "action_fields": {
+            "generate_action": true,
+            "generate_payment_logic": false,
+            "wallet_id": "",
+            "currency": "",
+            "amount": "",
+            "amount_source": "owner_data",
+            "paid_flag": ""
+        }
+    },
+    "preview_action": {
+        "is_preview_mode": false,
+        "is_settings_preview": false,
+        "is_owner_data_preview": false,
+        "is_client_data_preview": false,
+        "is_public_page_preview": false
+    }
+}
